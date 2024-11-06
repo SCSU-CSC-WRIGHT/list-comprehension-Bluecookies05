@@ -6,7 +6,7 @@ def lab_1():
         score=int(input("Enter the score:  "))
         scores.append(score)
 print(scores)
-avg=sum(score)/len(score)
+avg=sum(scores)/len(scores)
 
 if avg>=90:
     print("A")
@@ -19,11 +19,12 @@ elif avg>=60 and avg<70:
 else avg>=0 and avg<60:
     print("F")
 
-## ============= grade calculator lab 1 ================
-
+lab_1()
 
 ## ============= Even and odd number counter lab 2 ==================
 
+
+def lab_2 = split.()
 
 ## ============= Even and odd number counter lab 2 ==================
 
