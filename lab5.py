@@ -53,16 +53,19 @@ lab_2()
 ## ============ Unique list merger lab 3 =========================
 
 def merge_remove_duplicates():
-    user_input = int(input(" enter numbers that ARE SEPERATE BY SPACE!! or type exit to get out: "))
+    user_input = int(input(" enter numbers that ARE SEPERATE BY SPACE!! or type exit to get out: ")).split
 
-    if user_input == "exit":
-        print ("BYEEE")
-        break
+    unique_input = [] 
 
-unique_list = [] 
-for num in user_input:
-    if num not in unique_list:
-        unique_list.append(num)
+    for num in user_input:
+        if num not in unique_input:
+         unique_input.append(num)
+
+        return list(set(unique_input))
+
+# anything that is a set would auto check for duplicates 
+
+print( unique_input )
 
 merge_remove_duplicates()
 
