@@ -21,9 +21,8 @@ def lab_1():
     else:
         print("F")
 
+
 lab_1()
-
-
 ## ============= Even and odd number counter lab 2 ==================
 
 def lab_2():
@@ -48,24 +47,28 @@ def lab_2():
     print("Even numbers count:", even_count)
     print("Odd numbers count:", odd_count)
 
-lab_2()
 
+lab_2()
 ## ============ Unique list merger lab 3 =========================
 
 def merge_remove_duplicates():
-    user_input = int(input(" enter numbers that ARE SEPERATE BY SPACE!! or type exit to get out: ")).split
+    list1 =input(" enter numbers that ARE SEPERATE BY SPACE!!: ")
+    list2= input(" enter numbers that ARE SEPERATE BY SPACE!!: ")
+    ComList=list1+list2
 
+    list1=ComList.split(",")
     unique_input = [] 
 
-    for num in user_input:
+    for num in ComList:
         if num not in unique_input:
          unique_input.append(num)
 
-        return list(set(unique_input))
+    print(unique_input)
+    
 
 # anything that is a set would auto check for duplicates 
 
-print( unique_input )
+
 
 merge_remove_duplicates()
 
